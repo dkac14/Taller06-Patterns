@@ -1,11 +1,11 @@
 package PrincipioDecorator;
 
-import PrincipioFactoryMethod.Informe;
+import PrincipioFactoryMethod.Reporte;
 
 public abstract class DecoradorInforme implements InformeInterface {
-    private Informe informe;
+    private Reporte informe;
 
-    public DecoradorInforme(Informe informe){
+    public DecoradorInforme(Reporte informe){
         this.informe = informe;
     }
 }

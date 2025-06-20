@@ -1,10 +1,10 @@
 package PrincipioDecorator;
 
-import PrincipioFactoryMethod.Informe;
+import PrincipioFactoryMethod.Reporte;
 
 public class DecoradorFuente extends DecoradorInforme {
 
-    public DecoradorFuente(Informe informe) {
+    public DecoradorFuente(Reporte informe) {
         super(informe);
         //TODO Auto-generated constructor stub
     }
