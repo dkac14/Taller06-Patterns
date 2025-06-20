@@ -1,4 +1,4 @@
-package PrincipioFactoryMethodYBuilder;
+package principiofactorymethodybuilder;
 public class Informe {
 
 }
