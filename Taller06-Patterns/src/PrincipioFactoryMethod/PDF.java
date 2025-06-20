@@ -1,5 +1,8 @@
-package principiofactorymethodybuilder;
-public class Excel implements Formato{
+package PrincipioFactoryMethod;
+
+import PrincipioBuilder.ReporteBuilder;
+
+public class PDF implements Reporte, ReporteBuilder{
     private String encabezado;
     private String cuerpo;
     private String pie;
@@ -22,8 +25,9 @@ public class Excel implements Formato{
         this.exportacion=exportacion;
     }
 
+
     public void generarReporte(){
-        System.out.println("Generando reporte en Excel");
+        System.out.println("Generando reporte en PDF");
         System.out.println(encabezado);
         System.out.println(cuerpo);
         System.out.println(pie);

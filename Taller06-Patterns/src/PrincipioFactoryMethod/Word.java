@@ -1,5 +1,8 @@
-package principiofactorymethodybuilder;
-public class PDF implements Formato{
+package PrincipioFactoryMethod;
+
+import PrincipioBuilder.ReporteBuilder;
+
+public class Word implements Reporte, ReporteBuilder{
     private String encabezado;
     private String cuerpo;
     private String pie;
@@ -22,13 +25,11 @@ public class PDF implements Formato{
         this.exportacion=exportacion;
     }
 
-
     public void generarReporte(){
-        System.out.println("Generando reporte en PDF");
+        System.out.println("Generando reporte en Word");
         System.out.println(encabezado);
         System.out.println(cuerpo);
         System.out.println(pie);
         System.out.println(exportacion);
     }
-
 }

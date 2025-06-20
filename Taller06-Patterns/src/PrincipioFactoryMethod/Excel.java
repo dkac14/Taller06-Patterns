@@ -1,5 +1,8 @@
-package principiofactorymethodybuilder;
-public class Word implements Formato{
+package PrincipioFactoryMethod;
+
+import PrincipioBuilder.ReporteBuilder;
+
+public class Excel implements Reporte, ReporteBuilder{
     private String encabezado;
     private String cuerpo;
     private String pie;
@@ -23,10 +26,11 @@ public class Word implements Formato{
     }
 
     public void generarReporte(){
-        System.out.println("Generando reporte en Word");
+        System.out.println("Generando reporte en Excel");
         System.out.println(encabezado);
         System.out.println(cuerpo);
         System.out.println(pie);
         System.out.println(exportacion);
     }
+
 }
