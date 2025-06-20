@@ -27,7 +27,6 @@ public class PDF implements Reporte{
     }
 
 
-
     public void generarReporte(){
         System.out.println("Generando reporte en PDF");
         System.out.println(encabezado);
@@ -35,5 +34,14 @@ public class PDF implements Reporte{
         System.out.println(pie);
         System.out.println(exportacion);
     }
+
+
+    @Override
+    public String toString() {
+        return "PDF [encabezado=" + encabezado + ", cuerpo=" + cuerpo + ", pie=" + pie + ", exportacion=" + exportacion
+                + "]";
+    }
+
+    
 
 }

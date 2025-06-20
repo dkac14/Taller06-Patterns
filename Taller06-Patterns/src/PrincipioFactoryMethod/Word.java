@@ -1,7 +1,5 @@
 package PrincipioFactoryMethod;
 
-
-
 public class Word implements Reporte{
     private String encabezado;
     private String cuerpo;
@@ -36,4 +34,13 @@ public class Word implements Reporte{
         System.out.println(pie);
         System.out.println(exportacion);
     }
+
+
+    @Override
+    public String toString() {
+        return "Word [encabezado=" + encabezado + ", cuerpo=" + cuerpo + ", pie=" + pie + ", exportacion=" + exportacion
+                + "]";
+    }
+
+    
 }
