@@ -36,4 +36,14 @@ public class Excel implements Reporte{
         System.out.println(exportacion);
     }
 
+
+    @Override
+    public String toString() {
+        return "Excel [encabezado=" + encabezado + ", cuerpo=" + cuerpo + ", pie=" + pie + ", exportacion="
+                + exportacion + "]";
+    }
+
+    
+
+
 }
