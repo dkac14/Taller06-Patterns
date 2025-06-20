@@ -1,5 +1,7 @@
 package PrincipioFacade;
 
+import PrincipioFactoryMethod.Reporte;
+
 public class FachadaNotificaciones {
 
     private NotificadorCorreo correo;
@@ -12,23 +14,23 @@ public class FachadaNotificaciones {
     }
 
 
-    public void enviarPorCorreo(String mensaje, String destinatario) {
-        correo.enviarMensaje(mensaje, destinatario);
+    public void enviarPorCorreo(Reporte reporte, String destinatario) {
+        correo.enviarMensaje(reporte, destinatario);
     }
 
-    public void enviarPorWhatsApp(String mensaje, String destinatario) {
-        whatsapp.enviarMensaje(mensaje, destinatario);
+    public void enviarPorWhatsApp(Reporte reporte, String destinatario) {
+        whatsapp.enviarMensaje(reporte, destinatario);
     }
 
-    public void enviarPorTelegram(String mensaje, String destinatario) {
-        telegram.enviarMensaje(mensaje, destinatario);
+    public void enviarPorTelegram(Reporte reporte, String destinatario) {
+        telegram.enviarMensaje(reporte, destinatario);
     }
 
     //En caso de querer enviar por todos a la vez.
-    public void enviarATodos(String mensaje, String destinatario) {
-        correo.enviarMensaje(mensaje, destinatario);
-        whatsapp.enviarMensaje(mensaje, destinatario);
-        telegram.enviarMensaje(mensaje, destinatario);
+    public void enviarATodos(Reporte reporte, String destinatario) {
+        correo.enviarMensaje(reporte, destinatario);
+        whatsapp.enviarMensaje(reporte, destinatario);
+        telegram.enviarMensaje(reporte, destinatario);
     }
 
     
