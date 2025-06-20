@@ -1,4 +1,7 @@
 package PrincipioFactoryMethodYBuilder;
-public class Informe {
+
+import PrincipioDecorator.InformeInterface;
+
+public class Informe implements InformeInterface{
 
 }

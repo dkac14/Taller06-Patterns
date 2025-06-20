@@ -1,23 +1,23 @@
-package principiosigleton;
+package PrincipioSigleton;
 
-public class VisualizadorDeReportes {
-    private static VisualizadorDeReportes instancia;
+public class VisualizadorDeInforme {
+    private static VisualizadorDeInforme instancia;
 
     // Constructor privado
-    private VisualizadorDeReportes() {
+    private VisualizadorDeInforme() {
         System.out.println("Visualizador inicializado");
     }
 
     // Método para obtener la instancia única
-    public static VisualizadorDeReportes obtenerInstancia() {
+    public static VisualizadorDeInforme obtenerInstancia() {
         if (instancia == null) {
-            instancia = new VisualizadorDeReportes();
+            instancia = new VisualizadorDeInforme();
         }
         return instancia;
     }
 
     // Método para mostrar un reporte
-    public void mostrarReporte(String contenido) {
+    public void mostrarInforme(String contenido) {
         System.out.println("Mostrando reporte:\n" + contenido);
     }
 }
