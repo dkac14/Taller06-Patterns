@@ -11,6 +11,6 @@ public class ExcelCreator extends CreadorReporte {
         builder.crearCuerpo("Cuerpo");
         builder.crearPie("Pie");
         builder.crearExportacion("Exportado como .xlsx");
-        return 
+        return builder.obtenerReporte();
     }
 }

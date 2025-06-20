@@ -1,6 +1,6 @@
 package PrincipioBuilder;
 
-
+import PrincipioFactoryMethod.Reporte;
 
 public interface ReporteBuilder{
 
@@ -8,6 +8,7 @@ public interface ReporteBuilder{
     void crearCuerpo(String cuerpo);
     void crearPie(String pie);
     void crearExportacion(String exportacion);
+    Reporte obtenerReporte();
     
 
 }

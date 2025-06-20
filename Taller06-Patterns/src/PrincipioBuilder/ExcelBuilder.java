@@ -10,22 +10,22 @@ public class ExcelBuilder implements ReporteBuilder{
 
     @Override
     public void crearEncabezado(String encabezado) {
-        excel.setEncabezado("Encabezado del reporte PDF");
+        excel.setEncabezado("Encabezado del reporte Excel");
     }
 
     @Override
     public void crearCuerpo(String cuerpo) {
-        excel.setCuerpo("Cuerpo del reporte PDF");
+        excel.setCuerpo("Cuerpo del reporte Excel");
     }
 
     @Override
     public void crearPie(String pie) {
-        excel.setPie("Pie de página del reporte PDF");
+        excel.setPie("Pie de página del reporte Excel");
     }
 
     @Override
     public void crearExportacion(String exportacion) {
-        excel.setPie("Pie de página del reporte PDF");
+        excel.setPie("Pie de página del reporte Excel");
     }
 
     public Reporte obtenerReporte() {
