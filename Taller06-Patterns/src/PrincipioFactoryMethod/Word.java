@@ -1,29 +1,33 @@
 package PrincipioFactoryMethod;
 
-import PrincipioBuilder.ReporteBuilder;
 
-public class Word implements Reporte, ReporteBuilder{
+
+public class Word implements Reporte{
     private String encabezado;
     private String cuerpo;
     private String pie;
     private String exportacion;
 
-    public void crearEncabezado(String encabezado){
-        this.encabezado=encabezado;
+    
+    public void setEncabezado(String encabezado) {
+        this.encabezado = encabezado;
     }
 
 
-    public void crearCuerpo(String cuerpo){
-        this.cuerpo=cuerpo;
+    public void setCuerpo(String cuerpo) {
+        this.cuerpo = cuerpo;
     }
 
-    public void crearPie(String pie){
-        this.pie=pie;
+
+    public void setPie(String pie) {
+        this.pie = pie;
     }
 
-    public void crearExportacion(String exportacion){
-        this.exportacion=exportacion;
+
+    public void setExportacion(String exportacion) {
+        this.exportacion = exportacion;
     }
+
 
     public void generarReporte(){
         System.out.println("Generando reporte en Word");
