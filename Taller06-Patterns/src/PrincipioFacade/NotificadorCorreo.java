@@ -2,13 +2,13 @@ package PrincipioFacade;
 
 import PrincipioFactoryMethod.Reporte;
 
-public class NotificadorCorreo implements Notificador{
+public class NotificadorCorreo{
 
-    @Override
-    public void enviarMensaje(Reporte reporte, String destinatario) {
+    
+    public void enviarMensaje(String mensaje, String destinatario) {
 
 
-        System.out.println("Enviando correo a " + destinatario + ": " + reporte);
+        System.out.println("Enviando correo a " + destinatario + ": " + mensaje);
         
     }
 

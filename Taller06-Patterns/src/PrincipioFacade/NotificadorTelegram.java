@@ -1,8 +1,8 @@
 package PrincipioFacade;
 
-public class NotificadorTelegram implements Notificador{
+public class NotificadorTelegram{
 
-    @Override
+    
     public void enviarMensaje(String mensaje, String destinatario) {
 
         

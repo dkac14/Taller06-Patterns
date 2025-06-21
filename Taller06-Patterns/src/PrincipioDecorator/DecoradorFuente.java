@@ -13,11 +13,6 @@ public class DecoradorFuente extends DecoradorInforme {
         System.out.println("Aplicando fuente de texto al Informe");
     }
 
-    @Override
-    public void EnviarReporte(Reporte reporte) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'EnviarReporte'");
-    }
 
     @Override
     public void enviar(String mensaje) {

@@ -6,7 +6,7 @@ import PrincipioFactoryMethod.Reporte;
 public class AdaptadorTelegram implements InformeInterface{
     private Telegram Telegram;
 
-    public AdaptadorTelegram(ServicioTelegram servicioTelegram) {
+    public AdaptadorTelegram(Telegram servicioTelegram) {
         this.Telegram = Telegram;
     }
 
@@ -14,9 +14,5 @@ public class AdaptadorTelegram implements InformeInterface{
         Telegram.enviarTelegram(mensaje);
     }
 
-    @Override
-    public void EnviarReporte(Reporte reporte) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'EnviarReporte'");
-    }
+
 }

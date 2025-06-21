@@ -1,7 +1,9 @@
 package PrincipioFacade;
 
+import PrincipioFactoryMethod.Reporte;
+
 public interface Notificador {
     
-    void enviarMensaje(String mensaje, String destinatario);
+    void enviarMensaje(Reporte reporte, String destinatario);
 
 }

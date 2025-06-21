@@ -1,7 +1,6 @@
 package PrincipioAdaptador;
 
 import PrincipioDecorator.InformeInterface;
-import PrincipioFactoryMethod.Reporte;
 
 public class AdaptadorWhatsApp implements InformeInterface{
     private WhatsApp WhatsApp;
@@ -14,9 +13,5 @@ public class AdaptadorWhatsApp implements InformeInterface{
         WhatsApp.enviarMensajeWhatsApp(mensaje);
     }
 
-    @Override
-    public void EnviarReporte(Reporte reporte) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'EnviarReporte'");
-    }
+    
 }
